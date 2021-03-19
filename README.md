@@ -214,8 +214,9 @@
      reboot
     ```
 ____
-I hope you enjoyed the guid I made though if you have had any isssues with my guid please submit it in them 
-[issues](https://github.com/RDHCode/archlinux/issues) section.
+
+<h4 align="center">I hope you enjoyed the guid I made though if you have had any isssues with my guid please submit it in them 
+issues section.</h4>
 
 
 
