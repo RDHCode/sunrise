@@ -14,7 +14,9 @@
     ```
 2. Connect to wifi ( Only if you use wifi primarily on your system ) :
     ```iwctl
+    iwctl
     station ( network interface ) connect ( SSID ) password ( password )
+    exit
     ```
 3. Partition disks ( Use lsblk if you don't know what your disk is called ) :
     ```cfdisk
@@ -77,12 +79,12 @@
 10. Setting up Swap
     ``` swapfile
     cd /mnt
-    touch /swap/swapfile
-    chattr +C /swap/swapfile
-    fallocate /swap/swapfile -l ( Swap size: Your ram size or otherwise. Examples: 1024M, 64M, 8G, )
-    mkswap /swap/swapfile
-    swapon /swap/swapfile
-    chmod 0600 /swap/swapfile
+    touch /mnt/swap/swapfile
+    chattr +C /mnt/swap/swapfile
+    fallocate /mnt/swap/swapfile -l ( Swap size: Your ram size or otherwise. Examples: 1024M, 64M, 8G, )
+    mkswap /mnt/swap/swapfile
+    swapon /mnt/swap/swapfile
+    chmod 0600 /mnt/swap/swapfile
     ```
 11. Install System
     ```install-system
